@@ -5,6 +5,12 @@
 		<div class="col-sm-4">
 			<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-tippity.png">
 			<h1 class="slogan">Be Fashion and Weather Savvy<span class="hashtag"> #fashionforecast</span></h1>
+			<form id="emailSubmit" class="subscribe" role="form" action="contact" method="get">
+			  <div class="form-group pull-left">
+			    <input type="email" class="form-control" id="email" placeholder="Sign up for updates!">
+			  </div>
+			  <button type="submit" class="btn btn-default pull-left">GO!</button>
+			</form>
 		</div>
 		<div class="col-sm-1">
 		</div>

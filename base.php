@@ -26,6 +26,22 @@
   </div><!-- /.wrap -->
 
   <?php get_template_part('templates/footer'); ?>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+    $( "#emailSubmit" ).submit(function( event ) {
+      var email = { email: $( "#email" ).val()};
+
+      // Put the object into storage
+      localStorage.setItem('email', JSON.stringify(email));
+    });
+
+    var emailRaw = localStorage.getItem('email');
+     var email = JSON.parse(emailRaw);
+    $(".emailClass").val(email.email);
+
+  });
+  </script>
 
 </body>
 </html>

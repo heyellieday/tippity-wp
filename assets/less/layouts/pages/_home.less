@@ -1,5 +1,6 @@
 .home-header{
 	min-height:575px;
+	@media screen and (max-width: 992px) { min-height:500px; }
 	background: url(../img/header-background.png) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -20,6 +21,28 @@
 	}
 	.hashtag{
 		color:@brand-main;
+	}
+	.subscribe{
+		.form-group{
+			width: 80%;
+			.form-control{
+				margin-top: 15px;
+				border: 0px solid #cccccc;
+				border-radius: 0px;
+				-webkit-box-shadow: in;
+				height:40px;
+			}
+		}
+		.btn{
+			margin-top: 15px;
+			border: 1px solid transparent;
+			border-radius: 0px;
+			-webkit-box-shadow: in;
+			background-color:@brand-main;
+			width:20%;
+			color:white;
+			height:40px;
+		}
 	}
 }
 .how-it-works{
